@@ -1,0 +1,160 @@
+:root{
+    --PrimaryColor:hsl(199, 100%, 33%);
+    --SecondaryColor:hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor:hsl(240, 4%, 36%);
+    --whiteColorDeam:hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputCOlor:rgb(239, 239, 239);
+    --bodyColor:rgb(240,240,246);
+    --carBG:rgb(225,225,235);
+}
+.mainNav-container{
+    width: 100%;
+    background: var(--whiteColorDeam);
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(2,15,29,0.242);  
+    
+}
+.navbar-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo-div{
+    width: 100%;
+    display: flex;
+
+    .travel-icon{
+        color:var(--PrimaryColor);
+    }
+}
+
+.icon{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.navLinks-container{
+    display: flex;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.logo{
+    color:var(--blackColor);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+
+    .icon{
+        font-size: 25px;
+        color:var(--PrimaryColor);
+        transform: translateY(5px);
+    }
+}
+
+.btn-bookNow{
+    padding: 0.6rem 1.5rem;
+    background: var(--gradientColor);
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    a{
+    color: var(--whiteColor);
+    font-weight: 500;
+    }
+    &:hover{
+        background: var(--SecondaryColor);
+    }
+}
+
+@media screen and (max-width:768px){
+
+    .logo-div{
+        height: 10vh;
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .travel-icon{
+            font-size: 2rem;
+        }
+        
+    }
+    .navLinks{
+        position: absolute;
+        background: var(--whiteColorDeam);
+        height: max-content;
+        width: 80%;
+        border-radius: 1rem;
+        padding: 1rem;
+        top: -500rem;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 20;
+        box-shadow: 0 2px 4px rgba(2, 15,29, 0.904);
+        transition: .5s ease-in-out;
+    }
+    .activeNavbar{
+        top: 7rem;
+    }
+    .navLinks-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        padding: 0.5rem 0;
+        line-height: 45px;
+    }
+    .navLink{
+        color: var(--textColor);
+        font-size: 0.9rem;
+        font-weight: 600;
+
+        &:hover{
+            color: var(--PrimaryColor);
+        }
+    }
+    .btn-bookNow{
+        margin-top: 1rem;
+
+        a{
+            font-weight: 600;
+            color: var(--whiteColor);
+        }
+    }
+    .closeNavbar{
+        position: absolute;
+        top:1rem;
+        right: 1.5rem;
+        color: var(--PrimaryColor);
+
+        &:hover{
+            color: var(--SecondaryColor);
+        }
+    }
+
+}
+
+.toggleNavbar{
+    .icon-menu{
+        font-size: 25px;
+        color: var(--PrimaryColor);
+    }
+    &:hover{
+        color: var(--SecondaryColor);
+    }
+}
+
+
+

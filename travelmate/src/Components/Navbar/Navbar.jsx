@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="mainNav-container">
             <div className="navbar-container">
                 <div className="logo-div">
-                    <div>
+                    <div className="logo-div2">
                         <a href="#" className="logo">
                         </a>
                         <h1><MdOutlineTravelExplore className="icon travel-icon"/>TravelMate</h1>

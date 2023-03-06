@@ -11,44 +11,70 @@
     --bodyColor:rgb(240,240,246);
     --carBG:rgb(225,225,235);
 }
+@media screen and (min-width:768px){
+    .toggleNavbar{
+        display: none;
+    }
+    .closeNavbar{
+        display: none;
+    }
+}
+
 .mainNav-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    height: 100%;
     width: 100%;
     background: var(--whiteColorDeam);
     z-index: 100;
     box-shadow: 0 2px 4px rgba(2,15,29,0.242);  
 }
 
+
 .logo-div{
     display: flex;
-    width: 100vw;
-    align-items: center;
-
+    width: 20vw;
+    justify-content: end;
+    font-size: 12px;
+    font-weight: 700;
     .travel-icon{
         color:var(--PrimaryColor);
     }
 }
-
+.logo-div2{
+    display: flex;
+    align-items: center;
+}
 .icon{
     font-size: 2rem;
     cursor: pointer;
 }
 .navLinks-container{
+    width:50vw;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
 }
-
+.navLink{
+    color: gray;
+    font-size: 13px;
+    font-weight: 200;
+}
+.navLinks{
+    width: 55vw;
+}
 .navbar-container{
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+
 }
 .logo{
     color:var(--blackColor);
+    
     cursor: pointer;
-    align-items: center;
-    justify-content: center;
 
     .icon{
         font-size: 25px;
@@ -64,7 +90,6 @@
     border: none;
     outline: none;
     cursor: pointer;
-
     a{
     color: var(--whiteColor);
     font-weight: 500;
@@ -74,7 +99,70 @@
     }
 }
 
+//Navbar Mobile
 @media screen and (max-width:768px){
+    .mainNav-container{
+        height: 100%;
+        width: 100%;
+        background: var(--whiteColorDeam);
+        z-index: 100;
+        box-shadow: 0 2px 4px rgba(2,15,29,0.242);  
+    }
+    
+    .logo-div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+        .travel-icon{
+            color:var(--PrimaryColor);
+        }
+    }
+    
+    .icon{
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .navLinks-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .navbar-container{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    .logo{
+        color:var(--blackColor);
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+    
+        .icon{
+            font-size: 25px;
+            color:var(--PrimaryColor);
+            transform: translateY(5px);
+        }
+    }
+    
+    .btn-bookNow{
+        padding: 0.6rem 1.5rem;
+        background: var(--gradientColor);
+        border-radius: 3rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    
+        a{
+        color: var(--whiteColor);
+        font-weight: 500;
+        }
+        &:hover{
+            background: var(--SecondaryColor);
+        }
+    }
     .mainNav-container{
         width: 100%;
         background: var(--whiteColorDeam);
@@ -147,6 +235,16 @@
         right: 1.5rem;
         color: var(--PrimaryColor);
 
+        &:hover{
+            color: var(--SecondaryColor);
+        }
+    }
+    
+    .toggleNavbar{
+        .icon-menu{
+            font-size: 25px;
+            color: var(--PrimaryColor);
+        }
         &:hover{
             color: var(--SecondaryColor);
         }

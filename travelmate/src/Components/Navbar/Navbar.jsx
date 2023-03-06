@@ -25,12 +25,13 @@ const Navbar = () => {
                     <div className="logo-div2">
                         <a href="#" className="logo">
                         </a>
-                        <h1><MdOutlineTravelExplore className="icon travel-icon"/>TravelMate</h1>
+                        <MdOutlineTravelExplore className="icon travel-icon"/>
+                        <h1>TravelMate</h1>
                     </div>
                     
-                <div onClick={showNavBar}className="toggleNavbar">
-                    <TbGridDots className="icon"/>
-                </div>
+                    <div onClick={showNavBar}className="toggleNavbar">
+                        <TbGridDots className="icon"/>
+                    </div>
                 </div>
                 <div className={active}>
                     <ul className="navLinks-container">
@@ -57,7 +58,7 @@ const Navbar = () => {
                         </li>
                         <button className="btn-bookNow">
                         <a href="#">BOOK NOW</a>
-                    </button>
+                        </button>
                     </ul>
                     
                     <div onClick={hideNavBar}className="closeNavbar">

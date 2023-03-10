@@ -28,3 +28,14 @@ a{
 li{
   list-style: none;
 }
+.btn{
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1.5rem;
+  background: var(--gradientColor);
+  border-radius: 30px;
+  color: white;
+  border: none;
+  gap: 0.5rem;
+  margin-bottom: 10px;
+}

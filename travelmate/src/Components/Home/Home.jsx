@@ -26,31 +26,33 @@ const Home = () => {
                     </h1>
                 </div>
             </div>
-            <div className="cardDiv-container">
-                <div className="destination">  
-                    <label className="labelEdit" htmlFor="city">Search for your destination:</label>
-                    <div className="inputs">
-                        <input className="card-input" type="text" placeholder="Enter your destination"></input>
+            <div className="main-cardDiv">
+                <div className="cardDiv-container">
+                    <div className="destination">  
+                        <label className="labelEdit" htmlFor="city">Search for your destination:</label>
+                        <div className="inputs">
+                            <input className="card-input" type="text" placeholder="Enter your destination"></input>
+                        </div>
                     </div>
-                </div>
-                <div className="date">  
-                    <label className="labelEdit" htmlFor="date">Select the date</label>
-                    <div className="inputs">
-                        <input className="card-input" type="date"></input>
+                    <div className="date">  
+                        <label className="labelEdit" htmlFor="date">Select the date</label>
+                        <div className="inputs">
+                            <input className="card-input" type="date"></input>
+                        </div>
                     </div>
-                </div>
-                <div className="price">  
-                    <div className="total-label">
-                        <label className="labelEdit price-edit" htmlFor="price"> Price: {data}$</label>
-                    </div>
-                    <div className="inputs">
-                        <input className="card-input" type="range"  min="1000" max="5000" step="10" value={data} onChange={(e) => setData(e.target.value)}/>
-                        <h1></h1>
+                    <div className="price">  
+                        <div className="total-label">
+                            <label className="labelEdit price-edit" htmlFor="price"> Price: {data}$</label>
+                        </div>
+                        <div className="inputs">
+                            <input className="card-input" type="range"  min="1000" max="5000" step="10" value={data} onChange={(e) => setData(e.target.value)}/>
+                            <h1></h1>
+                        </div>
                     </div>
                 </div>
                 <div className="searchOptions">
-                    <span>FILTERS</span>
-                    <HiFilter className="icon"/>
+                        <span>FILTERS</span>
+                        <HiFilter className="icon"/>
                 </div>
             </div>
             <div className="homeFooterIcons">

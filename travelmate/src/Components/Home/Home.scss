@@ -74,13 +74,8 @@
     .cardDiv-container{
         display: flex;
         justify-content: center;
+        height: 15vh;
         align-items: center;
-        height: 30vh;
-        width:90vw;
-        z-index: 20;
-        flex-direction: row;
-        background-color: var(--whiteColor);
-        border-radius: 10px;
         gap: 2rem;
 
         .destination{
@@ -108,6 +103,7 @@
         }
         .inputs{
             display: flex;
+            align-items: center;
             height: 44px;
             color: gray;
             padding: 0 1rem;
@@ -124,9 +120,23 @@
             }
         }
         
+        
+    }
+}
+.main-cardDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 25vh;
+        width:80vw;
+        z-index: 20;
+        background-color: var(--whiteColor);
+        border-radius: 10px;
+
         .searchOptions{
             display: flex;
-            height: 5vh;
+            height: 44px;
             background: var(--gradientColor);
             width: max-content;
             column-gap: 0.8rem;
@@ -136,6 +146,7 @@
             align-items: center;
             color: var(--whiteColor);
             cursor: pointer;
+
 
             &:hover{
                 background:var(--PrimaryColor);
@@ -148,9 +159,6 @@
                 font-size: 13px;
             }
         } 
-    }
-
-
 }
 
 
@@ -203,17 +211,20 @@
                 font-weight: 800;
             }
            }
-
-           .cardDiv-container{
-            height: 45vh;
+           .main-cardDiv{
+            height: 35vh;
             width: 60vw;
             z-index: 40;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            flex-direction: column;
             background-color: var(--whiteColor);
-            border-radius: 10px;
+            border-radius: 15px;
+
+           }
+           .cardDiv-container{
+            height: 28vh;
+            display: flex;
+            width: 60vw;
+            flex-direction: column;
+            align-items: center;
             gap: 1rem;
 
             .destination{

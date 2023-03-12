@@ -1,0 +1,125 @@
+/*Colors and styling */
+:root{
+    --PrimaryColor:hsl(199, 100%, 33%);
+    --SecondaryColor:hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor:hsl(240, 4%, 36%);
+    --whiteColorDeam:hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputCOlor:rgb(239, 239, 239);
+    --bodyColor:rgb(240,240,246);
+    --carBG:rgb(225,225,235);
+}
+
+@media screen and (max-width:768px){
+    .footer-container{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        margin: auto;
+        padding-top: 60px;
+    }
+
+    .videoDiv{
+        width: 100vw;
+        position: absolute;
+        
+
+        video{
+            object-fit: cover;
+            height: 40vh;
+            width: 100vw;
+        }
+        &::after{
+            content: ' ';
+            position: absolute;
+            background-color: rgba(10,84,107, 0.307);
+            height: 98%;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            mix-blend-mode: multiply;
+        }
+      
+    }
+    .div-container{
+        height: 100vh;
+        width: 100vw;
+        z-index: 100;
+
+        .divContainer{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: auto;
+            row-gap: 2rem;
+            z-index: 100;
+        }
+    }
+    
+    
+    .contactDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        
+        height: 16vh;
+
+            small{
+                font-size: 13px;
+                font-weight: 400;
+                font-family: "Poppins", sans-serif;
+                color: var(--whiteColor);
+            }
+            h2{
+                font-family: "Poppins", sans-serif;
+                font-weight: 700;
+                color: var(--whiteColor);
+                font-size: 1.8rem;
+            }    
+        }
+
+        .inputDiv{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 1rem;
+
+            input{
+                width: 60%;
+                padding: 0.5rem 0.6rem;
+                border-radius: 3rem;
+                border:1px solid var(--whiteColor);
+                outline: none;
+                background: transparent;
+                color: var(--whiteColor);
+
+                &::placeholder{
+                    color: var(--whiteColor);
+                    opacity: 0.5;
+                }
+            }
+            .btn{
+                display: flex;
+                width: 60%;
+                justify-content: center;
+                font-family: "Poppins", sans-serif;
+                font-weight: 500;
+                gap: 0.5rem;
+
+                .icon{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+

@@ -26,12 +26,13 @@
 
     .videoDiv{
         width: 100vw;
+        height: 100vh;
         position: absolute;
         
 
         video{
             object-fit: cover;
-            height: 40vh;
+            height: 100vh;
             width: 100vw;
         }
         &::after{
@@ -48,6 +49,9 @@
       
     }
     .div-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         height: 100vh;
         width: 100vw;
         z-index: 100;
@@ -117,9 +121,314 @@
 
                 .icon{
                     font-size: 18px;
+                }    
+                &:active{
+                    opacity: 0.5;
                 }
             }
         }
+        .footerCard{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding: 1rem 1rem 4rem;
+            gap: 2rem;
+            border-radius: 1rem;
+            background-color: var(--bodyColor);
+            width: 95vw;
+            height: 60vh;
+            margin-bottom: 10px;
+        }
+        .footerIntro{
+            font-size: 12.5px;
+            flex-basis: 50%;
+            justify-content: center;
+            flex-direction: column;
+            row-gap: 0.5rem
+            ;
+        }
+        .divLogo a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--blackColor);
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            
+            .icon{
+                font-size: 27px;
+                color: var(--PrimaryColor);
+                margin-right: 10px;
+            }
+        }
+        .footerParagraph{
+            font-size: 13px;
+            color: var(--textColor);
+        }
+        .footerSocials{
+            display: flex;
+            align-items: center;
+            column-gap: 0.5rem;
+
+            .icon{
+                color: var(--blackColor);
+                &:hover{
+                    color: var(--PrimaryColor);
+                }
+            }
+            
+        }
+        .footerLinks{
+            display: grid;
+            flex-basis: 50%;
+            width: 100%;
+            gap: 1rem;
+            grid-template-columns: repeat(2,1fr);
+            justify-content: space-between;
+
+            .linkGroup{
+                .groupTitle{
+                    display: block;
+                    font-family: "Poppins", sans-serif;
+                    color: var(--blackColor);
+                    margin-bottom: 0.5rem;
+                }
+
+                .footerList{
+                   font-size: 15px;
+                   color: var(--textColor);
+                   transition: 0.3s ease-in-out;
+
+                   .icon{
+                    font-size: 15px;
+                    color: var(--greyText);
+                   }
+
+                   &:hover{
+                    color: var(--PrimaryColor);
+                    transform: translateX(7px);
+
+                    .icon{
+                        color: var(--SecondaryColor);
+                    }
+                   }
+                }
+
+
+            }
+        }
+
     }
 
 
+///Laptops Responsivity    
+@media screen and (min-width:768px){
+    .footer-container{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width:95vw;
+        height: 90vh;
+        padding-top: 60px;
+        margin-left: 5px;
+        margin-top: 30px;
+    }
+
+    .videoDiv{
+        width: 96vw;
+        height: 90vh;
+        position: absolute;
+        
+
+        video{
+            object-fit: fill;
+            height: 90vh;
+            width: 99vw;
+        }
+        &::after{
+            content: ' ';
+            position: absolute;
+            background-color: rgba(10,84,107, 0.307);
+            width: 99vw;
+            height: 90vh;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            mix-blend-mode: multiply;
+        }
+      
+    }
+    .div-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 90vh;
+        width: 90vw;
+        z-index: 100;
+
+        .divContainer{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: auto;
+            row-gap: 2rem;
+            z-index: 100;
+        }
+    }
+    
+    
+    .contactDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        
+        height: 16vh;
+
+            small{
+                font-size: 13px;
+                font-weight: 400;
+                font-family: "Poppins", sans-serif;
+                color: var(--whiteColor);
+            }
+            h2{
+                font-family: "Poppins", sans-serif;
+                font-weight: 700;
+                color: var(--whiteColor);
+                font-size: 1.8rem;
+            }    
+        }
+
+        .inputDiv{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 1rem;
+
+            input{
+                width: 60%;
+                padding: 0.5rem 0.6rem;
+                border-radius: 3rem;
+                border:1px solid var(--whiteColor);
+                outline: none;
+                background: transparent;
+                color: var(--whiteColor);
+
+                &::placeholder{
+                    color: var(--whiteColor);
+                    opacity: 0.5;
+                }
+            }
+            .btn{
+                display: flex;
+                width: 60%;
+                justify-content: center;
+                font-family: "Poppins", sans-serif;
+                font-weight: 500;
+                gap: 0.5rem;
+
+                .icon{
+                    font-size: 18px;
+                }    
+                &:active{
+                    opacity: 0.5;
+                }
+            }
+        }
+        .footerCard{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding: 20px;
+            gap: 2rem;
+            border-radius: 1rem;
+            background-color: var(--bodyColor);
+            width: 60vw;
+            height: 46vh;
+            margin-bottom: 10px;
+        }
+        .footerIntro{
+            font-size: 12.5px;
+            flex-basis: 50%;
+            justify-content: center;
+            flex-direction: column;
+            row-gap: 0.5rem
+            ;
+        }
+        .divLogo a{
+            display: flex;
+            color: var(--blackColor);
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            
+            .icon{
+                font-size: 27px;
+                color: var(--PrimaryColor);
+                margin-right: 10px;
+            }
+        }
+        .footerParagraph{
+            font-size: 14px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            color: var(--textColor);
+        }
+        .footerSocials{
+            display: flex;
+            align-items: center;
+            column-gap: 0.5rem;
+
+            .icon{
+                color: var(--blackColor);
+                &:hover{
+                    color: var(--PrimaryColor);
+                }
+            }
+            
+        }
+        .footerLinks{
+            display: grid;
+            flex-basis: 50%;
+            width: 50%;
+            gap: 1rem;
+            grid-template-columns: repeat(2,1fr);
+            justify-content: space-between;
+
+            .linkGroup{
+                .groupTitle{
+                    display: block;
+                    font-family: "Poppins", sans-serif;
+                    color: var(--blackColor);
+                    margin-bottom: 0.5rem;
+                }
+
+                .footerList{
+                   font-size: 15px;
+                   color: var(--textColor);
+                   transition: 0.3s ease-in-out;
+
+                   .icon{
+                    font-size: 15px;
+                    color: var(--greyText);
+                   }
+
+                   &:hover{
+                    color: var(--PrimaryColor);
+                    transform: translateX(7px);
+
+                    .icon{
+                        color: var(--SecondaryColor);
+                    }
+                   }
+                }
+
+
+            }
+        }
+
+}

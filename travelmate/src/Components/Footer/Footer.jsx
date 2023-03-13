@@ -37,7 +37,8 @@ const Footer = () => {
                         <div className="footerIntro">
                             <div className="divLogo">
                                 <a href="#" className="myLogo">
-                                <MdOutlineTravelExplore className="icon"/>TravelMate
+                                <MdOutlineTravelExplore className="icon"/>
+                                TravelMate
                                 </a>
                             </div>
                             <div className="footerParagraph">
@@ -51,6 +52,7 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="footerLinks">
+                            {/* //First Group */}
                             <div className="linkGroup">
                                 <span className="groupTitle">
                                     OUR AGENCY
@@ -75,8 +77,40 @@ const Footer = () => {
                                     <FiChevronRight className="icon"/>
                                     Payment
                                 </li>
+                                
 
                             </div>
+
+
+                            {/* //Second Group */}
+                            <div className="linkGroup">
+                                <span className="groupTitle">
+                                    PARTNERS
+                                </span>
+                                <li className="footerList">
+                                    <FiChevronRight className="icon"/>
+                                    Bookings
+                                </li>
+                                <li className="footerList">
+                                    <FiChevronRight className="icon"/>
+                                    Rentcars
+                                </li>
+                                <li className="footerList">
+                                    <FiChevronRight className="icon"/>
+                                    HostelWorld
+                                </li>
+                                <li className="footerList">
+                                    <FiChevronRight className="icon"/>
+                                    Trivago
+                                </li>
+                                <li className="footerList">
+                                    <FiChevronRight className="icon"/>
+                                    TripAdvisor
+                                </li>
+                                
+
+                            </div>
+                            
 
                         </div>
 

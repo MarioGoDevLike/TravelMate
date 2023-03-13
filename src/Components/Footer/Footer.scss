@@ -14,6 +14,7 @@
 }
 
 @media screen and (max-width:768px){
+    
     .footer-container{
         display: flex;
         justify-content: center;
@@ -229,7 +230,7 @@
         justify-content: center;
         position: relative;
         width:95vw;
-        height: 90vh;
+        height: 96.6vh;
         padding-top: 60px;
         margin-left: 5px;
         margin-top: 30px;
@@ -242,8 +243,8 @@
         
 
         video{
-            object-fit: fill;
-            height: 90vh;
+            object-fit: cover;
+            height: 91vh;
             width: 99vw;
         }
         &::after{
@@ -251,9 +252,8 @@
             position: absolute;
             background-color: rgba(10,84,107, 0.307);
             width: 99vw;
-            height: 90vh;
+            height: 91vh;
             top: 0;
-            bottom: 0;
             right: 0;
             left: 0;
             mix-blend-mode: multiply;

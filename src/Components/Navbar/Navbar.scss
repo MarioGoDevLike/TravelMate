@@ -55,10 +55,35 @@
     flex-direction: row;
 }
 .navLink{
+    position: relative;
     color: gray;
+    padding-bottom: 20px;
     font-size: 13px;
     font-weight: 200;
+    
+
+    &::after{
+        content: '';
+        opacity: 0;
+        transition: ease-in-out 0.2s;
+        height: 2px;
+        width: 100%;
+        background-color: var(--PrimaryColor);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    &:hover{
+        color:var(--PrimaryColor);
+        transition: ease-in-out 0.2s;
+    
+    }
+
+    &:hover::after{
+        opacity: 1;
+    }
 }
+
 .navLinks{
     width: 55vw;
 }

@@ -95,10 +95,6 @@ const Main = () => {
     }
 ]
 
-
-
-
-
     return (
         <div className="main container main-div">
             <div className="secTitle">
